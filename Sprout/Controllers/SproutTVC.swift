@@ -40,7 +40,7 @@ class SproutTVC: SwipeTVC {
         if let item = sproutItems?[indexPath.row] {
             cell.textLabel?.text = item.title
             
-            cell.accessoryType = item.done ? .disclosureIndicator: .none
+            cell.accessoryType = .none
         } else {
             cell.textLabel?.text = "No Items added yet."
         }
